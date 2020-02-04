@@ -1,1 +1,69 @@
 BACKEND 
+
+yarn init -y
+cria um package.json
+
+
+Abrir terminal vscode
+
+instalar nova dependencia - express
+
+yarn add express  - intalação biblioteca que gerencia rotas
+
+
+yarn,lock é um cash com as versões de pacote do projeto 
+
+
+o node modules são as pastas com os códigos que o express tem de dependencias
+
+tudo que está na pasta node_modules não pode ser alterado
+
+fiz um .gitignore do nodemodules pra não subir no github
+
+criando o primiro index.js 
+
+o express vai ajudar principalmente a crias as rotas da minha aplicação, ele é leve- um microframework
+
+importando express para ter as funcionalidades da biblioteca
+
+express é uma função.
+
+app.get('/', (reqest, response)=>{
+
+})
+quando eu acesso alguma informação da minha rota eu estou fazendo uma requisiçãopro meu servidor (ela pode ter informações)- requisição é tudo que vem do frontend
+
+o response é como eu vou dar uma resposta pro meu clinte que é o frontend
+
+    return response.send('HELLO WORLD')- retorna de resposta um texto, mas sempre vamos solicitar .jsn na resposta do servidor.
+
+
+    yarn add nodemon -d (instala observador- atualiza servidor automaticamente)  - d é uma dependencia de desenvolvimento, ela não será utilizada depois q tiver em produção
+
+    yarn dev é o novo yarn nodemon index.js
+
+
+    abrir outro terminal para instalar outras dependencias
+
+essa requisição poe conter informações- a requisição é tudo q é recebido pelo front-end
+METODOS HTTP
+os principais metodos que vamos usar é o get(receber informação), post(criar informação), put(editar recurso), delete(apaga)
+get é o unico que conseguimos acessar nativo
+para testar os outros metodos intalar insomnia.rest 
+
+tipos de parametros:
+
+Query Params: request.query (filtro, ordenação, paginação....)
+
+os query params são 99% das vezes usados no get.
+para poder filtrar eu faço como query params (search - )
+
+
+Route Params: request.params(identificar um recurso na alteração ou remoção)
+
+usado no metodo put e delete (eu estou falando de 1 usuário)
+aparece no console 
+Body: o principal (usado para criar- usa-se aspas duplas)
+request.body
+  
+
